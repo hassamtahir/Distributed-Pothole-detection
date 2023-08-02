@@ -105,3 +105,21 @@ python3 -m torch.distributed.launch --nproc_per_node=<num_gpus_per_node> train.p
 Deploy the trained model to production environments for inference tasks.
 
         
+
+# Related Publication:
+
+@Article{s23094347,
+AUTHOR = {Tahir, Hassam and Jung, Eun-Sung},
+TITLE = {Comparative Study on Distributed Lightweight Deep Learning Models for Road Pothole Detection},
+JOURNAL = {Sensors},
+VOLUME = {23},
+YEAR = {2023},
+NUMBER = {9},
+ARTICLE-NUMBER = {4347},
+URL = {https://www.mdpi.com/1424-8220/23/9/4347},
+PubMedID = {37177550},
+ISSN = {1424-8220},
+ABSTRACT = {This paper delves into image detection based on distributed deep-learning techniques for intelligent traffic systems or self-driving cars. The accuracy and precision of neural networks deployed on edge devices (e.g., CCTV (closed-circuit television) for road surveillance) with small datasets may be compromised, leading to the misjudgment of targets. To address this challenge, TensorFlow and PyTorch were used to initialize various distributed model parallel and data parallel techniques. Despite the success of these techniques, communication constraints were observed along with certain speed issues. As a result, a hybrid pipeline was proposed, combining both dataset and model distribution through an all-reduced algorithm and NVlinks to prevent miscommunication among gradients. The proposed approach was tested on both an edge cluster and Google cluster environment, demonstrating superior performance compared to other test settings, with the quality of the bounding box detection system meeting expectations with increased reliability. Performance metrics, including total training time, images/second, cross-entropy loss, and total loss against the number of the epoch, were evaluated, revealing a robust competition between TensorFlow and PyTorch. The PyTorch environment&rsquo;s hybrid pipeline outperformed other test settings.},
+DOI = {10.3390/s23094347}
+}
+
